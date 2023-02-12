@@ -8,7 +8,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'sudo docker build -t ashrafamad/flaskapp:$BUILD_NUMBER .'
+                sh 'echo 123123123 | sudo -S docker build -t ashrafamad/flaskapp:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
