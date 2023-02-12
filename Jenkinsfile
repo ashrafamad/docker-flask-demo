@@ -18,7 +18,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'sudo docker push ylmt/flaskapp:$BUILD_NUMBER'
+                sh 'sudo docker push ashrafamad/flaskapp:$BUILD_NUMBER'
             }
         }
 }
