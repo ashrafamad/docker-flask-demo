@@ -1,7 +1,8 @@
 pipeline {
     agent any 
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('dockerhub')
+        DOCKERHUB_CREDENTIALS_PSW = "Owsn5g7a$$$"
+        DOCKERHUB_CREDENTIALS_USR = "ashraf_amad@hotmail.com"
     }
     stages { 
 
