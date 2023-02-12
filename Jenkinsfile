@@ -8,7 +8,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'sudo -S $DOCKERHUB_CREDENTIALS_PSW docker build -t ashrafamad/flaskapp:$BUILD_NUMBER .'
+                sh 'sudo docker build -t ashrafamad/flaskapp:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
